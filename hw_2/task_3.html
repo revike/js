@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+        let a = parseInt(prompt('Введите первое произвольное значение: '));
+        let b = parseInt(prompt('Введите второе произвольное значение: '));
+        let result = null;
+        if (a >= 0 && b >= 0) {
+            result = a - b;
+        } else if (a < 0 && b < 0) {
+            result = a * b;
+        } else {
+            result = a + b;
+        }
+        alert(`Результат: ${result}`);
+    </script>
+</body>
+
+</html>
