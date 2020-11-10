@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+
+        function summ(a, b) {
+            return a + b;
+        }
+
+        function sub(a, b) {
+            return a - b;
+        }
+
+        function mult(a, b) {
+            return a * b;
+        }
+
+        function div(a, b) {
+            return a / b;
+        }
+
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case '+':
+                    return summ(arg1, arg2);
+                    break;
+                case '-':
+                    return sub(arg1, arg2);
+                    break;
+                case '*':
+                    return mult(arg1, arg2);
+                    break;
+                case '/':
+                    return div(arg1, arg2);
+                    break;
+            }
+        }
+
+        function start() {
+            let arg1 = Number(prompt('Введите первое число: '));
+            let operation = prompt('Введите "+", "-", "*" или "/"')
+            let arg2 = Number(prompt('Введите второе число: '));
+            if (operation == '+' || operation == '-' || operation == '*' || operation == '/') {
+                let result = alert(`Результат = ${mathOperation(arg1, arg2, operation)}`);
+            } else {
+                alert('Введите "+", "-", "*", "/"');
+                start();
+            }
+
+        }
+
+        start();
+    </script>
+</body>
+
+</html>
