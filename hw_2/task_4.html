@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+
+        function summ(a, b) {
+            return a + b;
+        }
+
+        function sub(a, b) {
+            return a - b;
+        }
+
+        function mult(a, b) {
+            return a * b;
+        }
+
+        function div(a, b) {
+            return a / b;
+        }
+
+        let a = Number(prompt('Введите первое число: '));
+        let b = Number(prompt('Введите второе число: '));
+        let result = alert(`Сумма = ${summ(a, b)}\nРазность = ${sub(a, b)}\nПроизведение = ${mult(a, b)}\nДеление = ${div(a, b)}`);
+    </script>
+</body>
+
+</html>
